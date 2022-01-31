@@ -1,8 +1,7 @@
 {
-  "short_name": "Letreco",
-  "name": "Letreco - um jogo diário de adivinhar palavras",
-  "icons": [
-    {
+  "short_name": "Mariaaa",
+  "name": "Mariaaa - um jogo diário de adivinhar palavras",
+  "icons": [{
       "src": "icons/48x48.png",
       "type": "image/png",
       "sizes": "48x48"
