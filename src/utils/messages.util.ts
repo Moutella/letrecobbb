@@ -2,7 +2,7 @@ import { GuessLetter } from './../models/game.model';
 
 const NORMAL_MODE_EMOJIS = {
   'right': '🐍',
-  'displaced': '🌪',
+  'displaced': '🟨',
   'wrong': '🟥',
   'typing': '',
   'disabled': '',
