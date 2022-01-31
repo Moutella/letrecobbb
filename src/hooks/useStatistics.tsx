@@ -8,8 +8,6 @@ export interface GuessDistribution {
   '2': number;
   '3': number;
   '4': number;
-  '5': number;
-  '6': number;
   X: number;
 }
 
@@ -22,7 +20,7 @@ export interface Statistics {
 }
 
 const statisticsInit: Statistics = {
-  distribution: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0, X: 0 },
+  distribution: { '1': 0, '2': 0, '3': 0, '4': 0, X: 0 },
   currentStreak: 0,
   maxStreak: 0,
 }

@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { GlobalSettingsContext } from "../hooks/useGlobalSettings";
 
 function GuessExample(props: {word: string, exampleState: GuessLetterState}) {
-  const randomExample = getRandomInt(0, 5);
+  const randomExample = getRandomInt(0, 4);
 
   return <div className="d-flex">
     {
@@ -34,7 +34,7 @@ function HowToPlayScreen(props: OverlayScreenProps) {
 
         <p className="text-center">
           Todos os dias, uma nova palavra aparecerá no Letreco para você adivinhar.<br/>
-          Você terá 6 tentativas. Cada uma delas deve ser uma palavra que exista.<br/>
+          Você terá 4 tentativas. Cada uma delas deve ser uma palavra que exista.<br/>
           Acentos e cedilha são ignorados, tanto nas tentativas, quanto na resposta.<br/>
           Após chutar, as letras mudarão para indicar o quão perto você está da resposta.
         </p>
@@ -43,24 +43,23 @@ function HowToPlayScreen(props: OverlayScreenProps) {
 
         <p className="text-center">Se uma letra ficar {colorblind ? 'redonda' : 'verde'}, ela está presente na palavra e na posição correta.</p>
         <div className="d-flex justify-content-center align-items-center mb-4">
-          <GuessExample word='CERTO' exampleState='right' />
+          <GuessExample word='AMOR' exampleState='right' />
         </div>
 
         <p className="text-center">Se uma letra ficar {colorblind ? 'pontilhada' : 'amarela'}, ela está presente na palavra, mas na posição errada.</p>
         <div className="d-flex justify-content-center align-items-center mb-4">
-          <GuessExample word='QUASE' exampleState='displaced' />
+          <GuessExample word='ODIO' exampleState='displaced' />
         </div>
 
         <p className="text-center">Se uma letra ficar {colorblind ? 'desta cor' : 'vermelha'}, ela NÃO está na palavra.</p>
         <div className="d-flex justify-content-center align-items-center mb-4">
-          <GuessExample word='FALHA' exampleState='wrong' />
+          <GuessExample word='PICA' exampleState='wrong' />
         </div>
 
         <p className="text-center credits">
-          criado por <a href="https://gabtoschi.com" target="_blank" rel="noreferrer">Gabriel Toschi</a><br/>
-          banco de palavras por <a href="https://pt-br.libreoffice.org/projetos/vero" target="_blank" rel="noreferrer">VERO</a><br/>
-          versão brasileira não-oficial do <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank" rel="noreferrer">Wordle</a><br/>
-          powered by <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer">React</a>, <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a>, <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a><br/>
+          criado por <a href="https://twitter.com/Moutella" target="_blank" rel="noreferrer">Moutella</a><br/>
+          adaptação do código original de <a href="https://gabtoschi.com" target="_blank" rel="noreferrer">Gabriel Toschi</a><br/>
+          banco de palavras por <a href="https://github.com/pythonprobr/palavras" target="_blank" rel="noreferrer">pythonprobr</a><br/>
         </p>
 
         <div className="d-flex align-items-center justify-content-center">

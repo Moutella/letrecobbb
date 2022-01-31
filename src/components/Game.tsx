@@ -7,8 +7,8 @@ import EndGameScreen from './EndGameScreen';
 import GuessList from './GuessList';
 import Keyboard from './Keyboard';
 
-export const WORD_SIZE = 5;
-export const GUESS_LIST_SIZE = 6;
+export const WORD_SIZE = 4;
+export const GUESS_LIST_SIZE = 4;
 
 export const KEY_BACKSPACE = 'Backspace';
 export const KEY_ENTER = 'Enter';

@@ -1,8 +1,8 @@
 import { GuessLetter } from './../models/game.model';
 
 const NORMAL_MODE_EMOJIS = {
-  'right': '🟩',
-  'displaced': '🟨',
+  'right': '🐍',
+  'displaced': '🌪',
   'wrong': '🟥',
   'typing': '',
   'disabled': '',
@@ -14,13 +14,13 @@ export function getNormalEndGameMessage(
   guesses: GuessLetter[][],
   isGameWon: boolean,
 ): string {
-  let message = `${edition} (${isGameWon ? guesses.length : 'X'}/6) @MeuLetreco \n\n`;
+  let message = `joguei mariaaa ${edition} (${isGameWon ? guesses.length : 'X'}/6)\n\n`;
 
   message += guesses.map(guess => {
     return guess.map(letter => NORMAL_MODE_EMOJIS[letter.state]).join('') + '\n';
   }).join('');
 
-  message += '\njogue agora em gabtoschi.com/letreco';
+  message += '\njogue agora em https://mariaaa.moutella.com';
 
   return message;
 }

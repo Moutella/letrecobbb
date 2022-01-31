@@ -39,7 +39,7 @@ function SettingsScreen({
 
       <hr/>
 
-      <h3>Siga o Letreco!</h3>
+      <h3>Siga o Letreco Original!</h3>
       {
         SOCIAL_URLS.map(({label, url}, index) => (
           <Button

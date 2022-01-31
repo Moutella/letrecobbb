@@ -1,6 +1,5 @@
 {
   "name": "letreco",
-  "homepage": "https://gabtoschi.github.io/letreco/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

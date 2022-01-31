@@ -51,8 +51,8 @@ function EndGameScreen(props: EndGameScreenProps) {
                 + (props.isGameWon ? 'win-text' : 'lose-text')
               }
             >Você {props.isGameWon ? 'acertou!' : 'não conseguiu...'}</h1>
-            <p className='text-center mb-1'>o Letreco do dia era: <b>{props.dailyWord.word}</b></p>
-            <p className='text-center mb-3'>você usou <b>{props.guesses.length} de 6</b> tentativas</p>
+            <p className='text-center mb-1'>o Mariaaa do dia era: <b>{props.dailyWord.word}</b></p>
+            <p className='text-center mb-3'>você usou <b>{props.guesses.length} de 4</b> tentativas</p>
 
             <div className="d-flex flex-column justify-content-center align-items-center">
               {shareButton}

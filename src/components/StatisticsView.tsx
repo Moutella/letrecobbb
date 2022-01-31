@@ -70,7 +70,7 @@ export function StatisticsView() {
       <div className="row text-center">
         <div className="col-3 d-flex flex-column">
           <h4>{ allGames }</h4>
-          <span className='data-label'>letrecos jogados</span>
+          <span className='data-label'>mariaaas jogados</span>
         </div>
 
         <div className="col-3 d-flex flex-column">
@@ -119,7 +119,7 @@ export function StatisticsView() {
         </div>
 
         <div className="col-5 d-flex flex-column text-center justify-content-center">
-          <span>próximo letreco em:</span>
+          <span>próximo mariaaa em:</span>
           <h4>{ countdown }</h4>
         </div>
       </div>
