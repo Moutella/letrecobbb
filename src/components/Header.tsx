@@ -8,7 +8,7 @@ import { GlobalSettingsContext } from '../hooks/useGlobalSettings';
 import { StatisticsScreen } from './StatisticsScreen';
 
 const APP_NAME = 'MARIAAA';
-const TWITTER_URL = 'https://twitter.com/jadepicon';
+const TWITTER_URL = 'https://twitter.com/moutella';
 
 function Header() {
   const [{isColorblindModeActive}] = useContext(GlobalSettingsContext);
